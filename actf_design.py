@@ -78,7 +78,6 @@ class ACTFDesigner:
         bsdf_int.inputs['Base Color'].default_value = (0.8, 0.85, 0.9, 1.0)  # 흰색-회색
         bsdf_int.inputs['Metallic'].default_value = 0.3
         bsdf_int.inputs['Roughness'].default_value = 0.5
-        bsdf_int.inputs['Subsurface'].default_value = 0.2
         
         output_int = nodes.new('ShaderNodeOutputMaterial')
         output_int.location = (300, 0)
