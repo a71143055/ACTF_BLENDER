@@ -471,56 +471,56 @@ class ACTFDesigner:
         joints = {}
         
         # 어깨 관절 (왼쪽)
-        bpy.ops.mesh.primitive_sphere_add(radius=0.05, location=(-0.3, 0, 1.45))
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=0.05, location=(-0.3, 0, 1.45))
         left_shoulder_joint = bpy.context.active_object
         left_shoulder_joint.name = "ACTF_Joint_Left_Shoulder"
         left_shoulder_joint.data.materials.append(self.mat_nanotube)
         joints['left_shoulder_joint'] = left_shoulder_joint
         
         # 어깨 관절 (오른쪽)
-        bpy.ops.mesh.primitive_sphere_add(radius=0.05, location=(0.3, 0, 1.45))
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=0.05, location=(0.3, 0, 1.45))
         right_shoulder_joint = bpy.context.active_object
         right_shoulder_joint.name = "ACTF_Joint_Right_Shoulder"
         right_shoulder_joint.data.materials.append(self.mat_nanotube)
         joints['right_shoulder_joint'] = right_shoulder_joint
         
         # 팔꿈치 관절 (왼쪽)
-        bpy.ops.mesh.primitive_sphere_add(radius=0.04, location=(-0.75, 0, 1.35))
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=0.04, location=(-0.75, 0, 1.35))
         left_elbow_joint = bpy.context.active_object
         left_elbow_joint.name = "ACTF_Joint_Left_Elbow"
         left_elbow_joint.data.materials.append(self.mat_nanotube)
         joints['left_elbow_joint'] = left_elbow_joint
         
         # 팔꿈치 관절 (오른쪽)
-        bpy.ops.mesh.primitive_sphere_add(radius=0.04, location=(0.75, 0, 1.35))
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=0.04, location=(0.75, 0, 1.35))
         right_elbow_joint = bpy.context.active_object
         right_elbow_joint.name = "ACTF_Joint_Right_Elbow"
         right_elbow_joint.data.materials.append(self.mat_nanotube)
         joints['right_elbow_joint'] = right_elbow_joint
         
         # 고관절 (왼쪽)
-        bpy.ops.mesh.primitive_sphere_add(radius=0.06, location=(-0.12, 0, 0.95))
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=0.06, location=(-0.12, 0, 0.95))
         left_hip_joint = bpy.context.active_object
         left_hip_joint.name = "ACTF_Joint_Left_Hip"
         left_hip_joint.data.materials.append(self.mat_nanotube)
         joints['left_hip_joint'] = left_hip_joint
         
         # 고관절 (오른쪽)
-        bpy.ops.mesh.primitive_sphere_add(radius=0.06, location=(0.12, 0, 0.95))
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=0.06, location=(0.12, 0, 0.95))
         right_hip_joint = bpy.context.active_object
         right_hip_joint.name = "ACTF_Joint_Right_Hip"
         right_hip_joint.data.materials.append(self.mat_nanotube)
         joints['right_hip_joint'] = right_hip_joint
         
         # 무릎 관절 (왼쪽)
-        bpy.ops.mesh.primitive_sphere_add(radius=0.05, location=(-0.12, 0, 0.45))
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=0.05, location=(-0.12, 0, 0.45))
         left_knee_joint = bpy.context.active_object
         left_knee_joint.name = "ACTF_Joint_Left_Knee"
         left_knee_joint.data.materials.append(self.mat_nanotube)
         joints['left_knee_joint'] = left_knee_joint
         
         # 무릎 관절 (오른쪽)
-        bpy.ops.mesh.primitive_sphere_add(radius=0.05, location=(0.12, 0, 0.45))
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=0.05, location=(0.12, 0, 0.45))
         right_knee_joint = bpy.context.active_object
         right_knee_joint.name = "ACTF_Joint_Right_Knee"
         right_knee_joint.data.materials.append(self.mat_nanotube)
