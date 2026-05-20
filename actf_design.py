@@ -531,28 +531,28 @@ class ACTFDesigner:
     def setup_lighting(self):
         """조명 설정"""
         # 키 라이트
-        bpy.ops.light.light_add(type='SUN', location=(5, 5, 10))
+        bpy.ops.object.light_add(type='SUN', location=(5, 5, 10))
         key_light = bpy.context.active_object
         key_light.name = "ACTF_Key_Light"
         key_light.data.energy = 1000
         key_light.rotation_euler = Euler((math.radians(45), 0, math.radians(45)))
         
         # 필 라이트
-        bpy.ops.light.light_add(type='SUN', location=(-5, 5, 8))
+        bpy.ops.object.light_add(type='SUN', location=(-5, 5, 8))
         fill_light = bpy.context.active_object
         fill_light.name = "ACTF_Fill_Light"
         fill_light.data.energy = 500
         fill_light.rotation_euler = Euler((math.radians(30), 0, math.radians(135)))
         
         # 백 라이트
-        bpy.ops.light.light_add(type='SUN', location=(0, -5, 8))
+        bpy.ops.object.light_add(type='SUN', location=(0, -5, 8))
         back_light = bpy.context.active_object
         back_light.name = "ACTF_Back_Light"
         back_light.data.energy = 300
         back_light.rotation_euler = Euler((math.radians(30), 0, math.radians(180)))
         
         # 앰비언트 라이트
-        bpy.ops.light.light_add(type='POINT', location=(0, 0, 5))
+        bpy.ops.object.light_add(type='POINT', location=(0, 0, 5))
         ambient_light = bpy.context.active_object
         ambient_light.name = "ACTF_Ambient_Light"
         ambient_light.data.energy = 200
